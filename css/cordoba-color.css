@@ -1,0 +1,226 @@
+/*
+*	Cordoba (HTML) 2.0
+*	Copyright 2015, Limitless Themes
+* 	www.limitless.company
+*/
+
+
+/* Table of Content
+==================================================
+	#Background Colors 
+	#Border Colors 
+	#Text Colors */
+
+
+/* Background Colors
+================================================== */
+
+	::selection {
+		background: rgba(0,0,0,0.75);
+	}
+
+	::-moz-selection {
+		background: rgba(0,0,0,0.75);
+	}
+
+	section.page .content {
+		background-color: #ffffff;
+	}	
+
+	header.header {
+		background-color: transparent;
+	}
+
+	header.header.scrolled {
+		background-color: #ffffff;
+	}
+
+	nav.navigation {
+		background-color: rgba(255,255,255,0.95);
+	}
+
+	section.home video {
+		background-color: #111111;
+	}
+
+	section.home .overlay {
+		background: rgba(255,255,255,0.75);
+	}
+
+	section.home .flex-control-paging li a {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	section.home .flex-control-paging li a.flex-active {
+		background-color: rgba(0,0,0,1);
+	}
+
+	section.work .tools .albums select {
+		background-color: rgba(255,255,255,1);
+	}
+
+	section.work .stream .row > .file.video .overlay, 
+	section.work .stream .row > .file.youtube .overlay, 
+	section.work .stream .row > .file.vimeo .overlay {
+		background-color: rgba(255,255,255,0.4);
+	}
+
+	section.work .stream .row > .file.video.hover .overlay, 
+	section.work .stream .row > .file.youtube.hover .overlay, 
+	section.work .stream .row > .file.vimeo.hover .overlay {
+		background-color: rgba(255,255,255,0.2);
+	}
+
+	div.work-preview {
+		background-color: #ffffff;
+	}
+
+	div.work-preview .frame {
+		background-color: #eeeeee;
+	}	
+
+	div.work-preview .frame img::selection {
+		background: rgba(0,0,0,0);
+	}
+
+	div.work-preview .frame img::-moz-selection {
+		background: rgba(0,0,0,0);
+	}
+
+	section.blog .post .cover {
+		background-color: #ffffff;
+	}
+
+	section.blog .post .info {
+		background-color: #f6f6f6;
+	}
+
+	article.article {
+		background-color: #ffffff;
+	}
+
+
+/* Border Colors
+================================================== */
+
+	section.home .flex-control-paging li a.flex-active {
+		border-color: #000000;
+	}
+
+	section.work .albums select {
+		border-color: #000000;
+	}
+
+	section.work .stream .row > .file {
+		border-color: #ffffff;
+	}
+
+	section.blog header {
+		border-color: #000000;
+	}
+
+
+/* Text Colors
+================================================== */		
+
+	::selection {
+		color: #ffffff;
+	}
+
+	::-moz-selection {
+		color: #ffffff;
+	}
+
+	section.page .content .info .link a {
+		color: #a3a3a3;
+	}
+
+	section.page .content .info .link a > span {
+		color: #d4d4d4;
+	}
+
+	header.header .logo {
+		color: #000000;
+	}
+
+	nav.navigation .menu li {
+		color: #000000;
+	}
+
+	nav.navigation .copyright {
+		color: #a2a2a2;
+	}
+
+	nav.navigation .social li {
+		color: #a2a2a2;
+	}
+
+	nav.navigation .socials li:hover {
+		color: #000000;
+	}
+
+	section.home .title {
+		color: #000000;
+	}
+
+	section.home .slogan {
+		color: #000000;
+	}
+
+	section.home .discover {
+		color: #000000;
+	}
+
+	section.home .flex-direction-nav a {
+		color: #000000;
+	}
+
+	section.work .albums select {
+		color: #000000;
+	}
+
+	section.work .albums li {
+		color: #cccccc;
+	}
+
+	section.work .albums li:hover, 
+	section.work .albums li.selected {
+		color: #000000;
+	}
+
+	div.work-preview .meta .picture-title {
+		color: #000000;
+	}
+
+	div.work-preview .meta .album-title {
+		color: #999999;
+	}
+	
+	div.work-preview .nav .prev, 
+	div.work-preview .nav .next {
+		color: #000000;
+	}
+
+	section.blog .post .title {
+		color: #000000;
+	}
+
+	section.blog .post .date {
+		color: #b1b1b1;
+	}
+
+	article.article .entry-title {
+		color: #000000;
+	}
+
+	article.article .entry-meta span {
+		color: #b8b8b8;
+	}
+
+	footer.footer a {
+		color: #a3a3a3;
+	}
+
+	footer.footer a:hover {
+		color: #000000;
+	}

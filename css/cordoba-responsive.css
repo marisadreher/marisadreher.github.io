@@ -1,0 +1,333 @@
+/*
+*	Cordoba (HTML) 2.0
+*	Copyright 2015, Limitless Themes
+* 	www.limitless.company
+*/
+
+
+/* Table of Content
+==================================================
+	#Media Queries */
+
+
+/* #Media Queries
+================================================== */
+
+	@media screen and (min-resolution: 2dppx) {
+
+		header.header .menu span {
+			background-image: url(../images/misc/navigation-menu@2x.png);
+		}
+
+		header.header .menu.close span {
+			background-image: url(../images/misc/navigation-menu-close@2x.png);
+		}
+
+		section.home .discover {
+			background-image: url(../images/misc/home-discover@2x.png);
+		}
+
+		section.work .stream .row > .file.video .overlay, 
+		section.work .stream .row > .file.youtube .overlay, 
+		section.work .stream .row > .file.vimeo .overlay {
+			background-image: url(../images/misc/play@2x.png);
+		}
+
+		div.work-preview .close {
+			background-image: url(../images/misc/preview-close@2x.png);
+		}
+
+		div.work-preview .nav .prev, 
+		div.work-preview .nav .next {
+			background-image: url(../images/misc/preview-nav@2x.png);
+		}
+
+		article.article .social .facebook {
+			background-image: url(../images/social/dark/facebook@2x.png);
+		}
+
+		article.article .social .twitter {
+			background-image: url(../images/social/dark/twitter@2x.png);
+		}
+
+	}
+
+
+	@media only screen and (max-width: 767px) {
+
+
+		/* Grid
+		================================================== */
+
+			.container {
+				padding: 0px 20px;
+			}
+
+			.offset {
+				padding-bottom: 0px;
+				padding-top: 88px;
+			}
+
+			.row { 
+				margin-bottom: 20px;
+			}
+
+			.row.last-child { 
+				margin-bottom: 0px;
+			}
+
+
+		/* Typography
+		================================================== */
+
+			.title-very-large { 
+				font-size: 36px !important;
+			}
+
+			.title-large { 
+				font-size: 30px !important;
+			}
+
+			.title-semi-large { 
+				font-size: 32px !important;
+			}
+
+			.title-very-small { 
+				font-size: 11.5px !important;
+			}
+			
+
+		/* .header
+		================================================== */
+
+			header.header {
+				padding: 20px 0px 48px;
+			}
+
+			header.header .logo, 
+			header.header .menu {
+				width: 48%;
+			}
+
+
+		/* .home
+		================================================== */
+
+			section.home .text {
+				font-size: 12px;
+			}
+
+			section.home .flex-control-nav {
+				display: none;
+			}
+
+
+		/* .navigation
+		================================================== */
+
+			nav.navigation .menu .title-large {
+				font-size: 36px !important;
+			}
+
+			nav.navigation .footer {
+				bottom: 40px;
+				left: 20px;
+				right: 20px;
+			}
+
+
+		/* .page
+		================================================== */
+
+			section.page .offset {
+				padding-bottom: 20px;
+			}
+
+			section.page .background {
+				display: none;
+			}
+
+			section.page .content {
+				bottom: auto;
+				left: auto;
+				overflow: initial;
+				padding: 0px;
+				position: relative;
+				right: auto;
+				text-align: left;
+				top: auto;
+			}	
+
+			section.page .content .text .title-semi-large {
+				margin-bottom: 25px;
+			}
+
+
+		/* .work
+		================================================== */
+
+			section.work .tools {
+				bottom: initial;
+				position: relative;
+				text-align: center;
+				top: 0px;
+				width: 100%;
+			}
+
+			section.work .tools .albums {
+				position: relative;
+				text-align: center;
+				width: 100%;
+			}
+
+			section.work .tools .albums ul {
+				display: none;
+			}
+
+			section.work .tools .albums select {
+				display: block;
+			}
+
+			section.work .tools .contact {
+				display: none;
+			}
+
+			section.work .stream {
+				display: block;
+				left: 0px;
+				margin-left: auto;
+				position: relative;
+				text-align: center;
+			}
+
+			div.work-preview {
+				padding: 0px 20px;
+			}
+
+			div.work-preview .info {
+				padding-top: 10px;
+			}
+
+			div.work-preview .close {
+				margin-top: 20px;
+			}
+
+			div.work-preview .frame {
+				margin-bottom: 15px;
+				margin-top: 12px;
+			}
+
+			div.work-preview .meta .picture-title {
+				display: block;
+			}
+
+			div.work-preview .nav {
+				height: 50px;
+			}
+
+			div.work-preview .nav .prev,
+			div.work-preview .nav .next {
+				background-image: none;
+				position: absolute;
+				top: auto !important;
+				-ms-transform: rotate(0deg);
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			div.work-preview .nav .prev {
+				left: 19px;
+				padding-right: 0px;
+			}
+
+			div.work-preview .nav .next {
+				padding-left: 0px;
+				right: 16px;
+			}
+
+
+		/* .blog
+		================================================== */
+
+			section.blog .row {
+				margin-bottom: 20px;
+			}
+
+			section.blog .post {
+				height: auto;
+				margin-bottom: 20px;
+			}
+
+			section.blog .post:last-child {
+				margin-bottom: 0px;
+			}
+
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {		
+
+
+		/* .work
+		================================================== */
+
+			section.work .container {
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+
+			section.work .tools .albums {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+
+			section.work .stream .row > .file {
+				height: 200px;
+			}
+
+	}
+
+	@media only screen and (max-width: 479px) {
+
+		/* .work
+		================================================== */
+
+			section.work .container {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			section.work .stream .row > .file {
+				border-left-width: 0px;
+				border-right-width: 0px;
+				float: none;
+				display: block;
+				height: 300px;
+				width: 100%;
+			}		
+
+			section.work.grid-quad .stream .row > .file,
+			section.work.grid-trio .stream .row > .file {
+				height: 300px !important;
+				width: 100% !important;
+			}
+
+		/* .navigation
+		================================================== */
+
+			nav.navigation .footer {
+				bottom: 15px;
+			}
+
+			nav.navigation .footer .row {
+				margin-bottom: 0px;
+			}
+
+			nav.navigation .footer .social {
+				text-align: center;
+			}
+
+			nav.navigation .footer .copyright {
+				display: none;
+			} 
+
+	}

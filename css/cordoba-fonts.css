@@ -1,0 +1,63 @@
+/*
+*	Cordoba (HTML) 2.0
+*	Copyright 2015, Limitless Themes
+* 	www.limitless.company
+*/
+
+
+/* Table of Content
+==================================================
+	#Bebas Neue
+	#Montserrat */
+
+
+/* Bebas Neue
+================================================== */
+
+	@font-face {
+	    font-family: 'Bebas Neue';
+	    font-stretch: normal;
+		font-weight: 400;
+	    src: url('../fonts/bebasneue/bebasneue-regular.eot');
+	    src: url('../fonts/bebasneue/bebasneue-regular.eot') format('embedded-opentype'),
+	         url('../fonts/bebasneue/bebasneue-regular.woff') format('woff'),
+	         url('../fonts/bebasneue/bebasneue-regular.ttf') format('truetype'),
+	         url('../fonts/bebasneue/bebasneue-regular.svg#BebasNeueRegular') format('svg');
+	}
+
+	@font-face {
+	    font-family: 'Bebas Neue';
+	    font-stretch: normal;
+		font-weight: 100;
+	    src: url('../fonts/bebasneue/bebasneue-thin.eot');
+	    src: url('../fonts/bebasneue/bebasneue-thin.eot') format('embedded-opentype'),
+	         url('../fonts/bebasneue/bebasneue-thin.woff') format('woff'),
+	         url('../fonts/bebasneue/bebasneue-thin.ttf') format('truetype'),
+	         url('../fonts/bebasneue/bebasneue-thin.svg#BebasNeueThin') format('svg');
+	}
+
+
+/* Montserrat
+================================================== */
+
+	@font-face {
+	  font-family: 'Montserrat';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url('../fonts/montserrat/Montserrat-Regular.eot');
+	  src: url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	       url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+	       url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+	       url('../fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	}
+
+	@font-face {
+	  font-family: 'Montserrat';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: url('../fonts/montserrat/Montserrat-Bold.eot');
+	  src: url('../fonts/montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+	       url('../fonts/montserrat/Montserrat-Bold.woff') format('woff'),
+	       url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
+	       url('../fonts/montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	}

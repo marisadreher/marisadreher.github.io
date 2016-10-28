@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BebasNeueThin';
+    src: url('bebasneue-thin.eot');
+    src: url('bebasneue-thin.eot') format('embedded-opentype'),
+         url('bebasneue-thin.woff2') format('woff2'),
+         url('bebasneue-thin.woff') format('woff'),
+         url('bebasneue-thin.ttf') format('truetype'),
+         url('bebasneue-thin.svg#BebasNeueThin') format('svg');
+}

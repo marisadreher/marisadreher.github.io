@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    font-stretch: normal;
+	font-weight: 400;
+    src: url('bebasneue-regular.eot');
+    src: url('bebasneue-regular.eot') format('embedded-opentype'),
+         url('bebasneue-regular.woff') format('woff'),
+         url('bebasneue-regular.ttf') format('truetype'),
+         url('bebasneue-regular.svg#BebasNeueRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-stretch: normal;
+	font-weight: 100;
+    src: url('bebasneue-thin.eot');
+    src: url('bebasneue-thin.eot') format('embedded-opentype'),
+         url('bebasneue-thin.woff') format('woff'),
+         url('bebasneue-thin.ttf') format('truetype'),
+         url('bebasneue-thin.svg#BebasNeueThin') format('svg');
+}
