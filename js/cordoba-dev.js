@@ -538,13 +538,13 @@ function previewImage(image) {
 
 	// Calculate height values
 	var fHeight = windowHeight - 190;
-	//var fHeight = windowHeight - 300;
+	//var fHeight = windowHeight - 300; //NEW
 	var marg = ((windowHeight - 100) / 2) + 40;
 
 	// Build the preview markup
 	var frame;
 	var nav = "<div class='nav'></div>";
-	var meta = "<div class='info'><div class='meta'><span class='picture-title'>"+caption+"</span><span class='album-title'>"+album+"</span><span class='current'>"+(current+1)+" / "+total+"</span></div><div class='close'></div></div>";
+	var meta = "<div class='info'><div class='meta'><span class='picture-title'>"+caption+"</span><span class='album-title'>"+album+"</span><span class='picture-detail'>"+detail"</span><span class='current'>"+(current+1)+" / "+total+"</span></div><div class='close'></div></div>";
 	if(type=="image") frame = "<div class='frame' style='height:"+fHeight+"px'><img src='"+source+"' alt='"+caption+"'></div>";
 	if(type=="video" || type=="youtube" || type=="vimeo" || type=="soundcloud") frame = "<div class='frame' style='height:"+fHeight+"px'><div class='player' data-type='"+type+"' data-url='"+url+"'></div></div>";
 	if(settings.previewNavButtons) nav = "<div class='nav'><div class='prev' style='top: "+marg+"px;'>"+settings.previewNavButtonPrev+"</div><div class='next' style='top: "+marg+"px;'>"+settings.previewNavButtonNext+"</div></div>";
