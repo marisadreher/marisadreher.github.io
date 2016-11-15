@@ -546,6 +546,7 @@
 	div.work-preview .frame img {
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 40px;
 		max-height: 100%;
 		max-width: 100%;
 		position: absolute;
@@ -557,7 +558,6 @@
 	div.work-preview .info {
 		height: 100px;
 		padding-top: 40px;
-		margin-bottom: 40px;
 		position: relative;
 	}
 
