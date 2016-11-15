@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 		if ($(this).hasClass("overlay-light")) $(this).append("<div class='overlay-light'></div>");
 	});
 
-	$(document).scroll(function() { 
+	$(document).scroll(function() {
 		var pageY = $(this).scrollTop();
 		if (pageY > 10) {
 			$('header.header').addClass("scrolled");
@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
 	$("section.work .file").hover(function(e){
 		$(this).removeClass("hover");
 		$(this).siblings().addClass("hover");
-	}, function(){ 
+	}, function(){
 		$('section.work .file').removeClass("hover");
 	});
 
@@ -103,7 +103,7 @@ jQuery(document).ready(function($) {
 	//Blog
 	$("section.blog .post").hover(function(e){
 		$(this).siblings().addClass("hover");
-	}, function(){ 
+	}, function(){
 		$('section.blog .post').removeClass("hover");
 	});
 
@@ -137,12 +137,12 @@ $(window).load(function() {
 	// General Adjustments
 	adjustSizes();
 
-	// Portfolio 
+	// Portfolio
 	showPortfolio();
 
 	//Loader
 	playLoader();
-	
+
 	//Animations
 	playAnimations();
 
@@ -167,12 +167,12 @@ function adjustSizes() {
 		$(this).css('margin-top', ($(this).parent().height() - $(this).height()) / 2);
 	});
 
-	// Adjust .stream 
+	// Adjust .stream
 	var stream = $("section.work .stream");
 	stream.attr("data-item-height", 300);
 	if(windowWidth < 767) stream.attr("data-item-height", 200);
 
-	// Adjust .page 
+	// Adjust .page
 	if(windowWidth > 767) {
 		$("section.page .background").css('height', windowHeight - 117);
 		$("section.page .content").css('height', windowHeight - 210);
@@ -353,7 +353,7 @@ function showPortfolio() {
 
 					// Create another row if all rows are full
 					if(stream.find(".row").length == stream.find(".row.full").length) {
-						stream.append("<div class='row'></div>"); 
+						stream.append("<div class='row'></div>");
 
 					// Calculate 'total width' if the last row is not full
 					} else {
@@ -379,7 +379,7 @@ function showPortfolio() {
 					    itemWidthTemp = itemWidthTemp - colMargin;
 					    item.attr("itemWidthRatio", itemWidthRatio).css("width", itemWidthTemp);
 
-					    
+
 					    var totalItemWidthRatio = containerWidth/totalItemWidth;
 
 					    if(work.hasClass("grid")) {
@@ -476,7 +476,7 @@ function showPortfolio() {
 
 					});
 
-					// Hide loading 
+					// Hide loading
 					stream.removeClass("loading");
 
 					// Final housekeeping
@@ -506,7 +506,7 @@ function showPortfolio() {
 					});
 
 					// Run the function again when scroll down
-				   	$(document).scroll(function() { 
+				   	$(document).scroll(function() {
 				   		var scrolled = $(this).scrollTop() + $(this).height();
 				   		if(scrolled>=windowHeight){
 				   			showPortfolio();
@@ -516,7 +516,7 @@ function showPortfolio() {
 					//playAnimations();
 
 				}
-				
+
 			});
 
 	});
@@ -532,11 +532,13 @@ function previewImage(image) {
 	var url = image.attr("data-url"); // Attached file path (for video)
 	var caption = image.attr("data-caption"); // Caption
 	var album = image.attr("data-album"); // Album title
+	var detail = image.attr("data-detail"); //Image details NEW
 	var current = $('section.work .stream .view').index(image); // Current index
 	var total = $('section.work .stream .view').length; //Total files in album
 
 	// Calculate height values
-	var fHeight = windowHeight - 190;
+	//var fHeight = windowHeight - 190;
+	var fHeight = windowHeight - 300;
 	var marg = ((windowHeight - 100) / 2) + 40;
 
 	// Build the preview markup
@@ -546,8 +548,8 @@ function previewImage(image) {
 	if(type=="image") frame = "<div class='frame' style='height:"+fHeight+"px'><img src='"+source+"' alt='"+caption+"'></div>";
 	if(type=="video" || type=="youtube" || type=="vimeo" || type=="soundcloud") frame = "<div class='frame' style='height:"+fHeight+"px'><div class='player' data-type='"+type+"' data-url='"+url+"'></div></div>";
 	if(settings.previewNavButtons) nav = "<div class='nav'><div class='prev' style='top: "+marg+"px;'>"+settings.previewNavButtonPrev+"</div><div class='next' style='top: "+marg+"px;'>"+settings.previewNavButtonNext+"</div></div>";
-	
-	// Show the preview 
+
+	// Show the preview
 	$.magnificPopup.open({
 		items: {
 		    src: "<div class='work-preview'>"+meta+frame+nav+"</div>",
@@ -558,7 +560,7 @@ function previewImage(image) {
 	// Adjust height values
 	$('.work-preview .frame').css('height', windowHeight - $('.work-preview .nav').height() - $('.work-preview .info').height() - 40);
 	$('.work-preview .prev, .work-preview .next').css('top', ((windowHeight - $('.work-preview .info').height()) / 2) + 40);
-	
+
 	// Disable prev if first
 	if(current==0) $('.work-preview .prev').addClass("disabled");
 
@@ -593,7 +595,7 @@ function previewImage(image) {
 	// Close preview
 	function previewClose(){
 		var magnificPopup = $.magnificPopup.instance;
-		magnificPopup.close();	
+		magnificPopup.close();
 	}
 
 	// Preview previous image/video
@@ -609,13 +611,15 @@ function previewImage(image) {
 			file = i.attr("data-file");
 			caption = i.attr("data-caption");
 			album = i.attr("data-album");
+			detail = i.attr("data-detail");
 
 			$('.work-preview .meta .picture-title').text(caption);
 			$('.work-preview .meta .album-title').text(album);
+			$('.work-preview .meta .picture-detail').text(detail); //NEW
 
 			if(type=="image") frame = "<div class='frame' style='height:"+fHeight+"px'><img src='"+img+"' alt='"+caption+"'></div>";
 			if(type=="youtube" || type=="vimeo" || type=="soundcloud") frame = "<div class='frame' style='height:"+fHeight+"px'><div class='player' data-type='"+type+"' data-file='"+file+"'></div></div>";
-			
+
 			$('.work-preview .frame').replaceWith(frame);
 
 			// Protect image if enabled
@@ -644,9 +648,9 @@ function previewImage(image) {
 			$('.work-preview .frame').on("swiperight",function(){
 				previewPrev();
 			});
-			
+
 		}
-	
+
 	}
 
 	// Preview next image/video
@@ -662,9 +666,11 @@ function previewImage(image) {
 			file = i.attr("data-file");
 			caption = i.attr("data-caption");
 			album = i.attr("data-album");
+			detail = i.attr("data-detail");
 
 			$('.work-preview .meta .picture-title').text(caption);
 			$('.work-preview .meta .album-title').text(album);
+			$('.work-preview .meta .picture-detail').text(detail); //NEW
 
 			if(type=="image") frame = "<div class='frame' style='height:"+fHeight+"px'><img src='"+img+"' alt='"+caption+"'></div>";
 			if(type=="youtube" || type=="vimeo" || type=="soundcloud") frame = "<div class='frame' style='height:"+fHeight+"px'><div class='player' data-type='"+type+"' data-file='"+file+"'></div></div>";
@@ -695,9 +701,9 @@ function previewImage(image) {
 			$('.work-preview .frame').on("swiperight",function(){
 				previewPrev();
 			});
-			
+
 		}
-	
+
 	}
 
 	// Close button
