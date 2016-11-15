@@ -557,6 +557,7 @@
 	div.work-preview .info {
 		height: 100px;
 		padding-top: 40px;
+		padding-bottom: 40px;
 		position: relative;
 	}
 
@@ -596,7 +597,7 @@
 	div.work-preview .meta span {
 		letter-spacing: 2.3px;
 		margin-right: 10px;
-		/*text-transform: uppercase;*/
+		text-transform: uppercase;
 	}
 
 	div.work-preview .meta .picture-title {
