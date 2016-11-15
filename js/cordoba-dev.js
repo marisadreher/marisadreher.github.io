@@ -537,8 +537,8 @@ function previewImage(image) {
 	var total = $('section.work .stream .view').length; //Total files in album
 
 	// Calculate height values
-	//var fHeight = windowHeight - 190;
-	var fHeight = windowHeight - 300;
+	var fHeight = windowHeight - 190;
+	//var fHeight = windowHeight - 300;
 	var marg = ((windowHeight - 100) / 2) + 40;
 
 	// Build the preview markup
