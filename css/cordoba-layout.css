@@ -596,7 +596,7 @@
 	div.work-preview .meta span {
 		letter-spacing: 2.3px;
 		margin-right: 10px;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 
 	div.work-preview .meta .picture-title {
@@ -604,6 +604,10 @@
 	}
 
 	div.work-preview .meta .album-title {
+
+	}
+
+	div.work-preview .meta .picture-detail{
 
 	}
 
