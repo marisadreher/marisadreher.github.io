@@ -76,7 +76,8 @@
 	}
 
 	div.work-preview .frame {
-		background-color: #eeeeee;
+		/*background-color: #eeeeee;*/
+		background-color: #ffffff;
 		border-color: #000000;
 		border-style: solid;
 		border-width: medium;
